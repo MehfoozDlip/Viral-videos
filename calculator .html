@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+  <link rel="stylesheet" href="new.css">
+</head>
+<body>
+  <div class="continer">
+   
+    <form class="cal ">
+      <div class="display">
+        <input type="text" name="display">
+      </div>
+      
+        <div>
+        <input type="button" value="AC" class="abc" onclick= "display.value = '' ">
+        <input type="button" value="DE" class="abc" onclick= "display.value =display.value.toString().slice(0,-1)">
+        <input type="button" value="%" class="abc" onclick= "display.value += '%' ">
+        <input type="button" value="÷" class="efg" onclick= "display.value += '/' ">
+      </div>
+      
+      
+      <div>
+        <input type="button" value="7" onclick= "display.value += '7' " class="ff" >
+        <input type="button" value="8" onclick= "display.value += '8' " class="ff">
+        <input type="button" value="9" onclick= "display.value += '9' " class="ff">
+        <input type="button" value="×" class="efg" onclick= "display.value += '*' ">
+      </div>
+      
+      <div>
+        <input type="button" value="4" onclick= "display.value += '4' " class="ff">
+        <input type="button" value="5" onclick= "display.value += '5' " class="ff" >
+        <input type="button" value="6" onclick= "display.value += '6' " class="ff">
+        <input type="button" value="-" class="efg" onclick= "display.value += '-' ">
+      </div>
+      
+      <div>
+        <input type="button" value="1" onclick= "display.value += '1' " class="ff" >
+        <input type="button" value="2" onclick= "display.value += '2' " class="ff" >
+        <input type="button" value="3" onclick= "display.value += '3' " class="ff" >
+        <input type="button" value="+" class="efg" onclick= "display.value += '+' " >
+      </div>
+      
+      <div>
+        <input type="button" value="0" class="zero ff" onclick= "display.value += '0' ">
+        <input type="button" value="." onclick= "display.value += '.' " class="ff">
+        <input type="button" value="=" class="efg" onclick= "display.value = eval(display.value)"> >
+      </div>
+      
+      
+      </form>
+    
+  </div>
+</body>
+</html>
